@@ -7,9 +7,6 @@ export const Nav = memo(() => {
 		<>
 			<nav>
 				<div className='flex flex-row items-center gap-5 mr-10'>
-					<NavItem href='/' key={0} linkText='Home' />
-					<NavItem href='/introduction' key={1} linkText='Introduction' />
-					<NavItem href='/about' key={2} linkText='About' />
 				</div>
 			</nav>
 		</>
