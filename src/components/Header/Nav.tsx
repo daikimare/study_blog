@@ -7,6 +7,8 @@ export const Nav = memo(() => {
 		<>
 			<nav>
 				<div className='flex flex-row items-center gap-5 mr-10'>
+					<NavItem href='/' linkText='Home' />
+					<NavItem href='/introduction' linkText='Introduction' />
 				</div>
 			</nav>
 		</>
@@ -18,17 +20,13 @@ const NavItem = memo(
 	({
 		href,
 		linkText,
-		key,
 	}: {
 		href: string
 		linkText: string
-		key?: number
 	}) => {
 		return (
 			<>
-				<Link key={key} href={href}>
-					{linkText}
-				</Link>
+				<Link href={href}>{linkText}</Link>
 			</>
 		)
 	},
